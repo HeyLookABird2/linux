@@ -1,5 +1,5 @@
 machine:
-  nodejs:
+  node:
     version: 8.2.0
 compile:
   override:
